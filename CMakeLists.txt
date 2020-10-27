@@ -20,7 +20,7 @@ HunterGate(
 
 
 # TODO: rename project and delete this comment
-project(template)
+project(Cache_Exp)
 string(APPEND CMAKE_CXX_FLAGS " -pedantic -Werror -Wall -Wextra")
 string(APPEND CMAKE_CXX_FLAGS " -Wno-unused-command-line-argument")
 string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
@@ -31,13 +31,11 @@ find_package(GTest CONFIG REQUIRED)
 # TODO: change template word to project name and delete this comment
 add_library(template STATIC
   # enum your files and delete this comment
-  ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp
-)
+  ${CMAKE_CURRENT_SOURCE_DIR}/sources/Cache_Exp.cpp)
 add_executable(tests
   # TODO: enum your files and delete this comment
   ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
 )
-
 # TODO: change template word to project name and delete this comment
 target_include_directories(template 
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
