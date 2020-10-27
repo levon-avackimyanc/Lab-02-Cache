@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/levon-avackimyanc/Lab-02-Cache.svg?branch=wp%2Flab)](https://travis-ci.org/levon-avackimyanc/Lab-02-Cache)
 # Лабораторная работа №2
 
 В большинстве современных ПК используется следующая иерархия памяти:
