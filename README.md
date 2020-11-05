@@ -134,30 +134,161 @@ cache_size['3'] = 8 mb;
 
 ### Результаты
 
-Ниже представлен формат и пример отчета:
-
-```yaml
-investigation:                                       |  investigaion:
-  travel_variant: <вариант_прохода>                  |    travel_order: "direction"
-  experiments:                                       |    experiments:
-  - experiment:                                      |    - experiment:
-      number:                                        |        number: 1
-      input_data:                                    |        input_data:
-        buffer_size: <размер_буфера>                 |          buffer_size: "1mb"
-      results:                                       |        results:
-        duration: <продолжительность>                |          duration: "1ns"
-  - experiment:                                      |    - experiment:
-      number: <номер_эксперимента>                   |        number: 2
-      input_data:                                    |        input_data:
-        buffer_size: <размер_буфера>                 |          buffer_size: "2mb"
-      results:                                       |        results:
-        duration: <продолжительность>                |          duration: "2ns"
-                                                     |
-investigation:                                       |  investigation:
-...                                                  |  ...
+Ниже представлен отчет вывода программы:
+investigation:
+	travel_order: Direct
+	experiments:
+	- experiment: 
+		number: 1
+		input_data:
+			buffer_size: 64KB
+		results:
+			duration: 4.33ns
+	- experiment: 
+		number: 2
+		input_data:
+			buffer_size: 128KB
+		results:
+			duration: 8.957ns
+	- experiment: 
+		number: 3
+		input_data:
+			buffer_size: 256KB
+		results:
+			duration: 16.965ns
+	- experiment: 
+		number: 4
+		input_data:
+			buffer_size: 512KB
+		results:
+			duration: 33.777ns
+	- experiment: 
+		number: 5
+		input_data:
+			buffer_size: 1024KB
+		results:
+			duration: 70.845ns
+	- experiment: 
+		number: 6
+		input_data:
+			buffer_size: 2048KB
+		results:
+			duration: 146.127ns
+	- experiment: 
+		number: 7
+		input_data:
+			buffer_size: 4096KB
+		results:
+			duration: 287.405ns
+	- experiment: 
+		number: 8
+		input_data:
+			buffer_size: 4608KB
+		results:
+			duration: 318.648ns
+investigation:
+	travel_order: Reverse
+	experiments:
+	- experiment: 
+		number: 1
+		input_data:
+			buffer_size: 64KB
+		results:
+			duration: 4.088ns
+	- experiment: 
+		number: 2
+		input_data:
+			buffer_size: 128KB
+		results:
+			duration: 8.212ns
+	- experiment: 
+		number: 3
+		input_data:
+			buffer_size: 256KB
+		results:
+			duration: 16.579ns
+	- experiment: 
+		number: 4
+		input_data:
+			buffer_size: 512KB
+		results:
+			duration: 33.352ns
+	- experiment: 
+		number: 5
+		input_data:
+			buffer_size: 1024KB
+		results:
+			duration: 67.37ns
+	- experiment: 
+		number: 6
+		input_data:
+			buffer_size: 2048KB
+		results:
+			duration: 129.169ns
+	- experiment: 
+		number: 7
+		input_data:
+			buffer_size: 4096KB
+		results:
+			duration: 249.615ns
+	- experiment: 
+		number: 8
+		input_data:
+			buffer_size: 4608KB
+		results:
+			duration: 276.077ns
+investigation:
+	travel_order: Random
+	experiments:
+	- experiment: 
+		number: 1
+		input_data:
+			buffer_size: 64KB
+		results:
+			duration: 16.571ns
+	- experiment: 
+		number: 2
+		input_data:
+			buffer_size: 128KB
+		results:
+			duration: 33.875ns
+	- experiment: 
+		number: 3
+		input_data:
+			buffer_size: 256KB
+		results:
+			duration: 67.349ns
+	- experiment: 
+		number: 4
+		input_data:
+			buffer_size: 512KB
+		results:
+			duration: 141.36ns
+	- experiment: 
+		number: 5
+		input_data:
+			buffer_size: 1024KB
+		results:
+			duration: 299.518ns
+	- experiment: 
+		number: 6
+		input_data:
+			buffer_size: 2048KB
+		results:
+			duration: 646.019ns
+	- experiment: 
+		number: 7
+		input_data:
+			buffer_size: 4096KB
+		results:
+			duration: 1592.72ns
+	- experiment: 
+		number: 8
+		input_data:
+			buffer_size: 4608KB
+		results:
+			duration: 2086.39ns
 ```
-
-⚠️ В отчет также необходимо добавить общий график с результатами всех исследований. ⚠️
 
 Ниже представлен общий график с результатами всех исследований:
 
