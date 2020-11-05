@@ -135,6 +135,7 @@ cache_size['3'] = 8 mb;
 ### Результаты
 
 Ниже представлен отчет вывода программы:
+```
 investigation:
 	travel_order: Direct
 	experiments:
