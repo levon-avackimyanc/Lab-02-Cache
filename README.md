@@ -293,4 +293,4 @@ investigation:
 
 Ниже представлен общий график с результатами всех исследований:
 
-![Result](Result.png)
+![Results](Results.png)
